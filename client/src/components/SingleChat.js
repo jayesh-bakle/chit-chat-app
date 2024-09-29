@@ -126,7 +126,7 @@ function SingleChat() {
     socket = io(
       process.env.NODE_ENV !== 'production'
         ? 'http://localhost:5000'
-        : 'https://tomper-chat.onrender.com'
+        : 'https://chit-chat-app-backend.onrender.com'
     );
     socket.emit('setup', currentUser);
     socket.on('connected', () => setSocketConnected(true));

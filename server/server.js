@@ -48,7 +48,7 @@ app.use('/api/message', messageRouter);
 app.use(errorMiddleware);
 
 // deployment setup
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === '') {
   const __directory = path.resolve();
   app.use(express.static(path.join(__directory, '/client/build')));
   app.get('*', (req, res) => {
