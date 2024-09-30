@@ -188,6 +188,7 @@ function SingleChat() {
                         .avatar.url
                     }
                   />
+                  
                   <VStack spacing='0' alignItems='flex-start'>
                     <Text>{getSender(currentUser, selectedChat.users)}</Text>
                     <Text fontSize='sm' color='gray.400'>
