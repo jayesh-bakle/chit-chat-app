@@ -162,7 +162,7 @@ function GroupChatModal() {
                   value={searchText}
                   onChange={(e) => handleSearch(e.target.value)}
                 />
-                <FormHelperText>Eg: Varun, Tarun</FormHelperText>
+                <FormHelperText>Eg: Jayesh,Malkesh</FormHelperText>
               </FormControl>
               <Flex w='100%' flexWrap='wrap' justifyContent='flex-start'>
                 {selectedUsers.map((user, index) => {
